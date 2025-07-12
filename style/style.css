@@ -1,7 +1,157 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .top {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
+    height: 100vh;
+    position: relative;
+}
+
+.nkar {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+}
+
+.nkar2 {
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+
+.name {
+    color: white;
+    margin: 0 auto;
+    font-size: 80px;
+    
+}
+
+.position {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.me {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    gap: 60px;
+}
+
+.m1 {
+    margin: 8px;
+}
+
+.nkar3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.main_carusel {
+    border: 2px solid;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#carusel {
+    display: flex;
+    border: 1px solid red;
+    width: 4000px;
+    position: relative;
+    right: 0;
+    transition: 0.3s;
+    div {
+        flex: 1;
+        border: 1px solid;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .nkar{
+        width: 60px;
+    }
+    .nkar2{
+        width: 60px;
+    }
+    .nkar3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .text{
+        font-size: 13px;
+    }
+}
+@media (max-width: 440px) {
+    .name{
+        font-size: 50px;
+    }
+    .position {
+        font-size: 20px;
+    }
+    .nkar.nkar2 {
+        width: 50px;
+    }
+    .nkar2 {
+        width: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .name {
+        font-size: 40px;
+    }
+    .position {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 427px) {
+    .nkar3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nkar {
+        width: 27px;
+    }
+    .nkar2 {
+        width: 27px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    .position {
+        font-size: 10px;
+    }
+    .top{
+        height: 75vh;
+    }
+}
+
+@media (max-width: 350px) {
+    .text {
+        font-size: 9px;
+    }
 }
