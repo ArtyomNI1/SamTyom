@@ -59,7 +59,8 @@
 
 .main_carusel {
     border: 2px solid;
-    width: 1000px;
+    width: 700px;
+    height: 250px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -67,7 +68,8 @@
 #carusel {
     display: flex;
     border: 1px solid red;
-    width: 4000px;
+    width: 700px;
+    height: 250px;
     position: relative;
     right: 0;
     transition: 0.3s;
